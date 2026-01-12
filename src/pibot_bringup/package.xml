@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>omar_project</name>
+  <version>0.0.1</version>
+  <description>Omar Navigation + URDF + Lidar Project</description>
+
+  <maintainer email="omar.elalaily94@gmail.com">rosdev</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- Build system -->
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <!-- Python dependencies -->
+  <exec_depend>rclpy</exec_depend>
+
+  <!-- ROS dependencies -->
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>tf2_geometry_msgs</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>nav2_bringup</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>PiBot</exec_depend>
+  <exec_depend>sllidar_ros2</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

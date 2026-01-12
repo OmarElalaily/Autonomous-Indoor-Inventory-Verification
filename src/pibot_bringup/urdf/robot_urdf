@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<robot name="bot">
+<!--  Base footprint (on the ground)  -->
+<link name="base_footprint"/>
+<!--  Main robot body  -->
+<link name="base_link">
+<visual>
+<geometry>
+<box size="0.2413 0.1335 0.0953"/>
+</geometry>
+</visual>
+</link>
+<link name="laser"/>
+<!--  Connect footprint to base  -->
+<joint name="base_joint" type="fixed">
+<parent link="base_footprint"/>
+<child link="base_link"/>
+<origin xyz="0 0 0.0477" rpy="0 0 0"/>
+</joint>
+<!--  Connect laser to base  -->
+<joint name="laser_joint" type="fixed">
+<parent link="base_link"/>
+<child link="laser"/>
+<!--  x: forward toward front, y: left/right offset, z: height above base_link center  -->
+<origin xyz="0.0445 0.0094 0.0811" rpy="0 0 3.14159"/>
+</joint>
+</robot>

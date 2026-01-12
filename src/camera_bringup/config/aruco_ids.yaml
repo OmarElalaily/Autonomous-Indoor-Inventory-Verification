@@ -1,0 +1,14 @@
+sku_by_id:
+  "4": silverware
+  "5": pasta
+  "6": cereal
+
+bay_by_id:
+  "1": Bay1
+  "2": Bay2
+  "3": Bay3
+
+expected_bay_by_sku:
+  silverware: Bay1
+  pasta: Bay2
+  cereal: Bay3
