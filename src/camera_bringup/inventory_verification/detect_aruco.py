@@ -20,7 +20,6 @@ class DetectArucoNode(Node):
 
 
     def camera_callback(self,msg):
-        # self.get_logger().warn("where are the aruco markers u piece of shit")
         # Convert ROS -> OpenCV
         current_frame = self.bridge.imgmsg_to_cv2(msg, "bgr8")
         # Detect

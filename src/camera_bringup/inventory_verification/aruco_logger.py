@@ -80,7 +80,7 @@ class ArucoLogger(Node):
             if arid_str in self.bay_map:
                 current_bay = self.bay_map[arid_str]
                 self.last_seen_bay = current_bay
-                break   # خد أول Bay وخلاص
+                break   # use the first bay marker in view
 
         # STEP 2: Process & Log Items
         for arid in current_ids:
